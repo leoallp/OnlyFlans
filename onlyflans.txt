@@ -1,5 +1,5 @@
-Instalaremos django 3.2.4 dentro del entorno virtual
-onlyflans, una vez instalado verificaremos que haya sido
+Instalaremos django ultima version dentro del entorno virtual onlyflans,
+una vez instalado verificaremos que haya sido
 instalado exitosamente utilizando el comando pip freeze.
 Realizaremos un “pantallazo” de la versión de python
 mostrada en la terminal/consola y la guardaremos en un
@@ -10,9 +10,9 @@ entorno virtual” o por la Lectura Referida 1.1, en el apartado
 “Puesta en marcha de un entorno de desarrollo Django
 (Español).
 
-*pip list y pantallazo ademas de píp freeze y txt de respaldo
-*python -m django version 
-*python --version
+
+
+
 
 Una vez creado el proyecto onlyflans, ingresaremos a la
 carpeta generada, aplicaremos las migraciones y
@@ -36,3 +36,34 @@ usados”, así como por la Lectura 1.1, apartado
 -reque1
 -requerimiento2
 -reque3
+
+
+1. Crea un entorno virtual llamado onlyflans y una vez activado, comprueba que la versión
+de python usada es python 3. Realiza un “pantallazo” de la versión de python mostrada
+en la terminal/consola y guardalo en un archivo jpg o png dentro de la carpeta
+requerimiento1.
+
+
+python -m venv env_onlyflans                    --> creacion de entorno
+source env_onlyflans/Scripts/activate           --> activacion
+python --version                                --> ver version de python instalada (pantallazo)
+
+
+2. Instalar django ultima version entorno virtual onlyflans, una vez instalado verifica que
+haya sido instalado exitosamente utilizando el comando pip freeze. Realiza un
+“pantallazo” de la versión de python mostrada en la terminal/consola y guardalo en un
+archivo jpg o png dentro de la carpeta requerimiento2.
+
+pip install django                              --> instalacion django
+python -m django version                        --> ver version django instalada
+pip freeze > requirements-env_onlyflans.txt     -->  txt con los dependencias instalados en el ev
+
+
+3. Usando django-admin genera un proyecto llamado onlyflans, una vez creado ingresa
+a la carpeta del proyecto generado, aplica las migraciones y ejecuta tu servidor
+utilizando los comandos correspondientes del archivo manage.py y accede a la url
+disponible para tu proyecto. Una vez que puedas acceder a la web en tu navegador,
+realiza un “pantallazo” de ésta y guardalo en un archivo jpg o png dentro de la carpeta
+requerimiento3.
+
+
