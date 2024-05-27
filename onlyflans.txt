@@ -1,0 +1,38 @@
+Instalaremos django 3.2.4 dentro del entorno virtual
+onlyflans, una vez instalado verificaremos que haya sido
+instalado exitosamente utilizando el comando pip freeze.
+Realizaremos un “pantallazo” de la versión de python
+mostrada en la terminal/consola y la guardaremos en un
+archivo jpg o png dentro de la carpeta requerimiento2.
+Para desarrollar esta actividad, puedes guiarte por el
+Videotutorial “Ejemplo de instalación de Django en un
+entorno virtual” o por la Lectura Referida 1.1, en el apartado
+“Puesta en marcha de un entorno de desarrollo Django
+(Español).
+
+*pip list y pantallazo ademas de píp freeze y txt de respaldo
+*python -m django version 
+*python --version
+
+Una vez creado el proyecto onlyflans, ingresaremos a la
+carpeta generada, aplicaremos las migraciones y
+ejecutaremos nuestro servidor utilizando los comandos
+correspondientes del archivo manage.py. Luego
+accederemos a la url disponible para tu proyecto. Una
+vez que podamos acceder a la web en nuestro
+navegador, realizaremos un “pantallazo” de ésta y lo
+guardaremos en un archivo jpg o png dentro de la
+carpeta requerimiento3.
+Para ello, nos guiaremos por el videotutorial “Ejemplo
+de uso de archivo manager.py y comandos más
+usados”, así como por la Lectura 1.1, apartado
+“Escribiendo tu primera app Django (Español)
+
+*crear env o vi -onlyflans para creacion del entorno
+
+
+
+*carpeta zip hito1 con: o usar github y cargar link como pareja
+-reque1
+-requerimiento2
+-reque3
