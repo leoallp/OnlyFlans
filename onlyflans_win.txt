@@ -1,0 +1,55 @@
+
+1. Crea un entorno virtual llamado onlyflans y una vez activado, comprueba que la versión
+de python usada es python 3. Realiza un “pantallazo” de la versión de python mostrada
+en la terminal/consola y guardalo en un archivo jpg o png dentro de la carpeta
+requerimiento1.
+
+
+python -m venv env_onlyflans                    --> creacion de entorno
+source env_onlyflans/Scripts/activate           --> activacion
+python --version                                --> ver version de python instalada (pantallazo)(guardar en carpeta requerimiento1)
+
+
+2. Instalar django ultima version entorno virtual onlyflans, una vez instalado verifica que
+haya sido instalado exitosamente utilizando el comando pip freeze. Realiza un
+“pantallazo” de la versión de django mostrada en la terminal/consola y guardalo en un
+archivo jpg o png dentro de la carpeta requerimiento2.
+
+pip install django                              --> instalacion django
+python -m django version                        --> ver version django instalada (pantallazo)(guardar en carpeta requerimiento2)
+pip freeze > requirements-env_onlyflans.txt     --> txt con los dependencias instalados en el env (guardar en carpeta requerimiento2)
+
+
+3. Usando django-admin genera un proyecto llamado onlyflans, una vez creado ingresa
+a la carpeta del proyecto generado, aplica las migraciones y ejecuta tu servidor
+utilizando los comandos correspondientes del archivo manage.py y accede a la url
+disponible para tu proyecto. Una vez que puedas acceder a la web en tu navegador,
+realiza un “pantallazo” de ésta y guardalo en un archivo jpg o png dentro de la carpeta
+requerimiento3.
+
+django-admin startproject onlyflans   --> creación del proyeccto
+cd onlyflans                          --> entramos a la carpeta del proyecto
+python manage.py makemigrations       --> crea los archivos de migración
+python manage.py migrate              --> aplica las migraciones existentes del proyecto a la bbdd
+python manage.py runserver            --> ejecutar servidor 
+
+Una vez creado el proyecto onlyflans, ingresaremos a la
+carpeta generada, aplicaremos las migraciones y
+ejecutaremos nuestro servidor utilizando los comandos
+correspondientes del archivo manage.py. Luego
+accederemos a la url disponible para tu proyecto. Una
+vez que podamos acceder a la web en nuestro
+navegador, realizaremos un “pantallazo” de ésta y lo
+guardaremos en un archivo jpg o png dentro de la
+carpeta requerimiento3.
+Para ello, nos guiaremos por el videotutorial “Ejemplo
+de uso de archivo manager.py y comandos más
+usados”, así como por la Lectura 1.1, apartado
+“Escribiendo tu primera app Django (Español)
+
+
+
+*carpeta zip hito1 con: o usar github y cargar link como pareja
+-reque1
+-requerimiento2
+-reque3
