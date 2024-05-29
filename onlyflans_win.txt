@@ -30,7 +30,23 @@ cd onlyflans                          --> entramos a la carpeta del proyecto
 python manage.py migrate              --> aplica las migraciones existentes del proyecto a la bbdd
 python manage.py runserver            --> ejecutar servidor 
 
+python manage.py createsuperuser      -->creacion super usuario (Username: leona  Email address: k17leo@gmail.com Password: admin1234)
 ------------------------------------------------ HITO 2 --------------------------------------------
+cd onlyflans                          --> entramos a la carpeta del proyecto
+python manage.py startapp web         --> creacion de app securdarias
+
+INSTALLED_APPS = [                     --> vilcular app a settings.py de app principal
+    .....
+    "web",
+]
+
+
+
+
+
+
+
+
 
 
 
