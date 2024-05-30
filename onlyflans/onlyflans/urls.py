@@ -16,11 +16,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from web.views import index, about, welcome
+from web import views
+#from . import views --> importa todas las views de todas las apps
+
+
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path('', index, name="index"),
-    path('acerca/', about, name="about"),
-    path('bienvenido/', welcome, name="welcome"), 
+    path('', views.index, name='index'),
+    path('acerca/', views.about, name="about"),
+    path('bienvenido/', views.welcome, name="welcome"), 
 ]
+

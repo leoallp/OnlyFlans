@@ -27,6 +27,7 @@ requerimiento3.
 
 django-admin startproject onlyflans   --> creación del proyeccto
 cd onlyflans                          --> entramos a la carpeta del proyecto
+python manage.py makemigrations       --> crea migraciones
 python manage.py migrate              --> aplica las migraciones existentes del proyecto a la bbdd
 python manage.py runserver            --> ejecutar servidor 
 
