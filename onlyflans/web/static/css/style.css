@@ -1,0 +1,53 @@
+
+/*CONTACTO*/
+.bg-image {
+    background-image: url('https://badun.nestle.es/imgserver/v1/80/1290x742/13309cdd2bb4-flan-de-arroz-con-leche-al-horno.jpg'); /* Asegúrate de que esta ruta sea correcta */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.bg-transparent {
+    background-color: rgba(255, 255, 255, 0.0); /* Fondo completamente transparente */
+}
+
+.form-label {
+    color: #ffffff; /* Color blanco para las etiquetas del formulario */
+}
+/* FIN CONTACTO*/
+
+
+/*CONTACTO EXITOSO*/
+.bg-image-block {
+    background-image: url('https://badun.nestle.es/imgserver/v1/80/1290x742/13309cdd2bb4-flan-de-arroz-con-leche-al-horno.jpg'); /* Ruta a tu imagen */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh; /* Hace que el contenedor ocupe toda la altura de la ventana */
+
+}
+
+body {
+    background-color: rgb(48, 61, 69);
+}
+
+/*CARDS */
+.card {
+    height: 100%; /* Ocupa todo el espacio del contenedor */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-top {
+    height: 280px; /* Ajusta este valor según tus necesidades */
+    object-fit: cover; /* La imagen se recortará para llenar el espacio sin distorsionarse */
+    width: 100%;
+}
+
+.card-body {
+    flex: 1 0 auto; /* Permite que el cuerpo de la tarjeta crezca para ocupar el espacio disponible */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+/* FIN CARDS */

@@ -45,6 +45,8 @@ INSTALLED_APPS = [                     --> vilcular app a settings.py de app pri
 
 
 
+para el formulario de contacto, creamos el models y luego makemigrations y migrate..luego creamos el archivo forms.py..luego hay que hacer el metodo en views.py
+
 
 
 
