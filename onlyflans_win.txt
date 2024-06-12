@@ -48,10 +48,12 @@ INSTALLED_APPS = [                     --> vilcular app a settings.py de app pri
 para el formulario de contacto, creamos el models y luego makemigrations y migrate..luego creamos el archivo forms.py..luego hay que hacer el metodo en views.py
 
 
+****para ver el server en el cel u otro dispositivo*********
+-agregamos ALLOWED_HOSTS = ['*']
+-python manage.py runserver 0.0.0.0:8000  
 
-
-
-
+-ipconfig     --->para ver la ip de mi servidor
+-copiamos la ip e ingresamos por esa ruta en otro dispositivo 
 
 
 
