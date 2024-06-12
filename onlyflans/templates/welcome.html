@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+    {% block content %}
+
+
+    <div class="container my-3">
+        <h1 class="text-light" id="titulo">¡Bienvenido {{ nombre_usuario|capfirst }}!</h1>
+        <h4 class="text-light">Estos son nuestros flanes reservados solo para ti.</h4>
+        <div class="row">
+            {% for flan in flanes %}
+            <div class="col-md-4 mb-4 mt-3">
+                <div class="card" style="width: 100%;">
+                    <img src="{{ flan.image_url }}" class="card-img-top" alt="{{ flan.name }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ flan.name }}</h5>
+                        <p class="card-text" style="display: none;">{{ flan.description }}</p>
+                        <button id="btn-card-{{ forloop.counter }}" type="button" class="btn btn-primary" style="display: none;" onclick="location.href='/contacto/'">Más Info</button>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+    
+    
+
+
+    {% endblock %}

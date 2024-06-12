@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container-fluid bg-image-login p-1 ">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6 text-center bg-transparent rounded">
+            
+            <div class="bg-form my-5 ">
+
+                <form method="post" action="/registro/">
+                    {% csrf_token %}
+                    {% if form.errors %}
+                    <p style="color: red;">datos incompletos o invalidos </p>
+                    {%endif%}
+                    <h3 id="registrate-title" class="text-light">Registrate</h3>
+                    <div class="my-4 text-center">  
+                        <div class="my-3"> 
+                            <div>
+                                <label for="username" class="text-light">Nombre de Usuario:</label>
+                            </div>
+                            <div>
+                                <input type="text" id="username" name="username" required>
+                            </div>
+                        </div>
+
+                        <div class="my-3">
+                            <div>
+                                <label for="email" class="text-light">Correo Electrónico:</label>
+                            </div>
+                            <div>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+
+                        <div class="my-3">
+                            <div>
+                                <label for="password" class="text-light">Contraseña:</label>
+                            </div>
+                            <div>
+                                <input type="password" id="password" name="password" required>
+                            </div>
+                        </div>
+                            <div class="my-3">
+                                <button type="submit" class="btn btn-primary">Registrarse</button>
+                            </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>    
+
+
+{% endblock %}

@@ -18,6 +18,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from web import views
+from django.contrib.auth import views as auth_views
+
 #from . import views --> importa todas las views de todas las apps
 
 
@@ -28,6 +30,11 @@ urlpatterns = [
     path('bienvenido/', views.welcome, name="welcome"), 
     path('contacto/', views.contacto, name="contacto"),  
     path('contacto_exitoso/', views.contacto_exitoso, name="contacto_exitoso"),  
-    path('login/', views.login, name="login"),  
+    path('registro/', views.registro, name="registro"),
+    path('accounts/', include('django.contrib.auth.urls')), 
+    path('logout/', views.logout_view, name='logout'),
+    
 ]
+
+
 

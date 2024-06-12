@@ -15,11 +15,6 @@ class ContactForm(models.Model):
         return self.customer_name    
 
 
-
-
-
-
-
 #model de los flanes 
 class Flan(models.Model):
     flan_uuid = models.UUIDField()
