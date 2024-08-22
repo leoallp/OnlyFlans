@@ -1,3 +1,10 @@
+.body-bg {
+    background-color: hsla(0, 0%, 0%, 1);
+    background-image: radial-gradient(circle at 50% 4%, hsla(0, 0%, 29%, 1) 8.409829185500534%, transparent 74.0128982782875%), radial-gradient(circle at 51% 94%, hsla(0, 0%, 29%, 1) 8.409829185500534%, transparent 71.43955776844714%);
+    background-blend-mode: normal, normal;
+}
+
+
 
 /*CONTACTO*/
 .bg-image {
@@ -50,7 +57,7 @@
 }
 
 body {
-    background-color: rgb(48, 61, 69);
+    background-color: rgb(75, 89, 98);
 }
 
 /*CARDS */
@@ -111,15 +118,15 @@ body {
 
 /* boton de sesion */
 #myDropdownButton {
-    background-color: #dfc541;
-    border-color: #dfc541;
-    color: #41424b; /* Ajusta el color del texto si es necesario */
+    background-color: rgb(214, 193, 89);
+    border-color: rgb(214, 193, 89);
+    color: #ffffff; /* Ajusta el color del texto si es necesario */
 }
 
 #myDropdownButton:hover,
 #myDropdownButton:focus {
-    background-color: #ccb336; /* Un tono ligeramente más oscuro para el estado hover/focus */
-    border-color: #ccb336;
+    background-color: rgb(192, 171, 66); /* Un tono ligeramente más oscuro para el estado hover/focus */
+    border-color: rgb(192, 171, 66);
 }
 
 

@@ -11,11 +11,14 @@ class RegistroForm(forms.ModelForm):
         model = User
         fields = ['username', 'email', 'password']
 
+
+
 #contact form con atributos ya establecidos
 class ContactFormModelForm(forms.ModelForm):
     class Meta:
         model = ContactForm
         fields = ['customer_email', 'customer_name', 'message']
+        
         
         
 #contact form con atributos personalizados

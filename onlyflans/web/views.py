@@ -59,6 +59,8 @@ def about(request):
     }
     return render(request, "about.html", context)    
     
+    
+    
 def contacto(request):
     titulo_pag = "Formulario de Contacto"
     nombre_usuario = None
@@ -80,6 +82,8 @@ def contacto(request):
         "nombre_usuario": nombre_usuario,
     }
     return render(request, 'contacto.html', context)
+
+
 
 
 def contacto_exitoso(request):
