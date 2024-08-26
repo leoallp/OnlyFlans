@@ -1,59 +1,24 @@
+algunos comandos y configuraciones usados por el desarrollador
+No estan todos los comandos y configuraciones, solo utilizar como referencia
 
--------------------------------------- HITO 1 --------------------------------------------------
-1. Crea un entorno virtual llamado onlyflans y una vez activado, comprueba que la versión
-de python usada es python 3. Realiza un “pantallazo” de la versión de python mostrada
-en la terminal/consola y guardalo en un archivo jpg o png dentro de la carpeta
-requerimiento1.
 
 python -m venv env_onlyflans                    --> creacion de entorno
 source env_onlyflans/Scripts/activate           --> activacion
 python --version                                --> ver version de python instalada (pantallazo)(guardar en carpeta requerimiento1)
-
-2. Instalar django ultima version entorno virtual onlyflans, una vez instalado verifica que
-haya sido instalado exitosamente utilizando el comando pip freeze. Realiza un
-“pantallazo” de la versión de django mostrada en la terminal/consola y guardalo en un
-archivo jpg o png dentro de la carpeta requerimiento2.
-
 pip install django                              --> instalacion django
 python -m django version                        --> ver version django instalada (pantallazo)(guardar en carpeta requerimiento2)
 pip freeze > requirements-env_onlyflans.txt     --> txt con los dependencias instalados en el env (guardar en carpeta requerimiento2)
-
-3. Usando django-admin genera un proyecto llamado onlyflans, una vez creado ingresa
-a la carpeta del proyecto generado, aplica las migraciones y ejecuta tu servidor
-utilizando los comandos correspondientes del archivo manage.py y accede a la url
-disponible para tu proyecto. Una vez que puedas acceder a la web en tu navegador,
-realiza un “pantallazo” de ésta y guardalo en un archivo jpg o png dentro de la carpeta
-requerimiento3.
-
-django-admin startproject onlyflans   --> creación del proyeccto
-cd onlyflans                          --> entramos a la carpeta del proyecto
-python manage.py makemigrations       --> crea migraciones
-python manage.py migrate              --> aplica las migraciones existentes del proyecto a la bbdd
-python manage.py runserver            --> ejecutar servidor 
-
-python manage.py createsuperuser      -->creacion super usuario (Username: leona  Email address: k17leo@gmail.com Password: admin1234)
------------------------------------------------- HITO 2 --------------------------------------------
-cd onlyflans                          --> entramos a la carpeta del proyecto
-python manage.py startapp web         --> creacion de app securdarias
-
-INSTALLED_APPS = [                     --> vilcular app a settings.py de app principal
+django-admin startproject onlyflans             --> creación del proyeccto
+cd onlyflans                                    --> entramos a la carpeta del proyecto
+*crear los models en models.py
+python manage.py makemigrations                 --> crea migraciones 
+python manage.py migrate                        --> aplica las migraciones existentes del proyecto a la bbdd
+*crear formularios en forms.py
+*configurar el admin.py
+python manage.py createsuperuser                -->creacion super usuario (Username: leona  Email address: k17leo@gmail.com Password: admin1234)
+python manage.py startapp web                   --> creacion de app securdarias
+INSTALLED_APPS = [                              --> vilcular app a settings.py de app principal
     .....
     "web",
 ]
-
-
-
-
-
-para el formulario de contacto, creamos el models y luego makemigrations y migrate..luego creamos el archivo forms.py..luego hay que hacer el metodo en views.py
-
-
-****para ver el server en el cel u otro dispositivo*********
--agregamos ALLOWED_HOSTS = ['*']
--python manage.py runserver 0.0.0.0:8000  
-
--ipconfig     --->para ver la ip de mi servidor
--copiamos la ip e ingresamos por esa ruta en otro dispositivo 
-
-
 

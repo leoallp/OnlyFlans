@@ -2,13 +2,13 @@
 {% extends 'base.html' %}
     
 {% block content %}
-    <div class="container-fluid bg-image p-1 ">
+    <div class="container-fluid bg-image ">
         <div class="row justify-content-center">
             <div class="col-12 col-md-6 text-center bg-transparent rounded">
                 
-                <div class="bg-form mt-5">
-                    <form action="/contacto/" method="post">
-                        <h3 id="contacto-title" class="text-light">Contactanos</h3>
+                <div class="bg-form my-5">
+                    <form action="/contacto/" method="post" >
+                        <h3 id="contacto-title" class="text-light">Quieres saber mas?.. <br>Contactanos</h3>
                         {% csrf_token %}
                         {{ form.non_field_errors }}
                         <div class="mb-3 text-center">

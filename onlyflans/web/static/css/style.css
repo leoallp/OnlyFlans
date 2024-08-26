@@ -1,9 +1,6 @@
-.body-bg {
-    background-color: hsla(0, 0%, 0%, 1);
-    background-image: radial-gradient(circle at 50% 4%, hsla(0, 0%, 29%, 1) 8.409829185500534%, transparent 74.0128982782875%), radial-gradient(circle at 51% 94%, hsla(0, 0%, 29%, 1) 8.409829185500534%, transparent 71.43955776844714%);
-    background-blend-mode: normal, normal;
+body {
+    background-image: linear-gradient(to bottom, #68ae92, #7bba93, #91c693, #a9d194, #c2dc95, #c2dc95, #c2dc95, #c2dc95, #a9d194, #91c693, #7bba93, #68ae92);
 }
-
 
 
 /*CONTACTO*/
@@ -11,7 +8,7 @@
     background-image: url('https://badun.nestle.es/imgserver/v1/80/1290x742/13309cdd2bb4-flan-de-arroz-con-leche-al-horno.jpg'); /* Asegúrate de que esta ruta sea correcta */
     background-size: cover;
     background-position: center;
-    height: 120vh;
+    height: 140vh;
 }
 
 .bg-transparent {
@@ -37,6 +34,10 @@
     padding: 20px; /* Añade espacio alrededor del formulario */
     border-radius: 10px; /* Añade bordes redondeados al formulario */
 }
+/*carousel about*/
+.carousel {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra del cuadro */
+}
 
 
 /*login pag*/
@@ -44,7 +45,7 @@
     background-image: url('https://www.bourgogne-tourisme.com/uploads/2023/12/le-village-gastronomique-1120x725.png'); /* Asegúrate de que esta ruta sea correcta */
     background-size: cover;
     background-position: center;
-    height: 88vh;
+    height: 130vh;
 }
 
 /*CONTACTO EXITOSO*/
@@ -66,6 +67,7 @@ body {
     display: flex;
     flex-direction: column;
     transition: all 0.3s ease-in-out;
+    
 }
 
 .card-img-top {

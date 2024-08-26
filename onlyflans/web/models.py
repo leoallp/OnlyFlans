@@ -30,13 +30,3 @@ class Flan(models.Model):
     def __str__(self) -> str:
         return f"objeto producto: {self.slug} - {self.is_private} - {self.name} "
     
- 
-
-    
-    
-    
-    
-    
-    
-    
-    

@@ -13,7 +13,7 @@ class RegistroForm(forms.ModelForm):
 
 
 
-#contact form con atributos ya establecidos
+#contact form con atributos ya establecidos por DJANGO
 class ContactFormModelForm(forms.ModelForm):
     class Meta:
         model = ContactForm
